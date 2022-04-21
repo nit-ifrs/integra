@@ -1,0 +1,876 @@
+module.exports = {
+    ifrs: {
+        inovacao: {
+            dummy: 'Dummy'
+            , msg: {
+              erro_titulo: '<h4>Oops...</h4><hr>',
+              indisponivel: '<h4>Serviço temporariamente indisponível.</h4><hr> Por favor, tente novamente em breve.',
+              autorizacao: '<h4>Você não pode acessar essa funcionalidade.</h4>',
+              usuariosAutent: 'Apenas usuarios que já se autenticaram no INTEGRA.',
+              erroAbas: 'Verifique os erros em TODAS AS ABAS no formulário.',
+              erro: 'Verifique os erros no formulário.',
+            }
+            , head: {
+                title: "Integra"
+                , subtitle: "O Portal da Inovação do IFRS"
+                ,title2: "<small>Estendendo os benefícios da pesquisa à comunidade</small>"
+                ,subtitle1: 'Quer inovar'
+                ,subtitle2: 'junto com o'
+                ,subtitle3: 'IFRS'
+                ,subtitle3abbr: 'Instituto Federal do Rio Grande do Sul'
+                , subtitle4: 'Conheça nossos servidores,'
+                , subtitle5: 'tecnologias e oportunidades'
+            }
+            , menu : {
+                portfolio: 'Portfólio'
+                ,pessoas: 'Pessoas'
+                ,infraestrutura: 'Infraestrutura'
+                ,projetos: 'Projetos'
+                ,producoes: 'Produções'
+                ,laboratorios: 'Laboratórios'
+                ,tecnologias: 'Tecnologias'
+                ,rede: 'Rede Integra'
+                ,ep: 'Escritório de Projetos'
+                ,vitrine: 'Vitrine Tecnológica'
+                ,parcerias: 'Organizações Parceiras'
+                ,servicos: 'Prestação de Serviços'
+                ,preferencias: 'Minhas Preferências'
+                ,admin: 'Administração'
+                ,usuarios: 'Usuários'
+                ,contato: 'Contato'
+                ,sobre: 'Sobre'
+                ,if: 'O IFRS'
+                ,logs: 'Logs dos Serviços'
+            }
+            , mensagem : {
+                titulo : {
+                    erro: 'Erro'
+                    , sucesso: 'Sucesso'
+                    , info: 'Atenção'
+                }
+            }
+            , search: {
+                busca: "Busca"
+                ,popover: "São possíveis as seguintes expressões para busca: <ul><li>Boleanas: <ul><li>para 'E' usa-se '+'</li><li>para 'OU' usa-se '|'</li><li>para 'NÃO' usa-se '-'</li></ul></li><li>Com prefixo usa-se 'prefixo*' </li><li>Para frases usa-se 'aspas' ('alguma frase') </li><li>Para precedência usa-se parênteses '( )' </li><li>Para fuzy usa-se fuzy~2; </li><li>Para operadores em frases de consulta usa-se 'alguma frase~3</li></ul>"
+                , popover2: "<strong>&quot;Inovação Tecnológica&quot;</strong> - usam-se (&quot;) para buscar por expressão ou frase específica.<br/><strong>inov*</strong> - usa-se (*) para buscar expressão incompleta, termos que começam por &quot;inov&quot;.<br/><strong>inovação - tecnológica</strong> - usa-se (-) para buscar excluir da consulta termos indesejados, retornando resultados de &quot;inovação&quot; que não apareçam a palavra '&quot;tecnológica&quot;<br/><strong>inovação + tecnológica</strong> - usa-se (+) para incluir obrigatoriamente termos na consulta, retornando resultados com &quot;inovação&quot; e &quot;tecnológica&quot; em qualquer ordem<br/><strong>inovação | tecnológica</strong> - usa-se (|) para incluir opcionalmente termos na consulta, retornando &quot;inovação&quot; ou &quot;tecnológica&quot; em qualquer ordem<br/><strong>tecnológica~2</strong> - usa-se (~) para busca fuzzy dos termos na consulta"
+                ,popover_title: 'Dicas para consulta'
+                ,select_campus: 'Selecione campus'
+                ,select_area: 'Selecione a grande área'
+                ,select_infra_tipo: 'Selecione o tipo de infraestrutura'
+                ,select_tipo: 'Selecione o tipo'
+                ,action: 'O que você procura?'
+                ,resultsFor: 'Resultados para:'
+                ,noResultsFor: 'Nenhum resultado para:'
+                ,noResults: 'Resultado não encontrado'
+                ,noCriteria: 'Informe um critério para busca.'
+                ,select_all: 'Todos'
+                ,select_none: 'Nenhum'
+                ,noResultsForCriteria: 'Nenhum resultado para os critérios informados.'
+                ,date_from: 'A partir de'
+                ,qualis_area: 'Área Qualis'
+                ,qualis_export: 'Exportar'
+            }
+            , main: {
+                name: 'Integra IFRS - Portal da Inovação'
+                ,portal: 'Portal da Inovação'
+                , subtitle: 'Competências e Expertises do Instituto Federal do RS'
+                ,search: 'Procure pessoas, produções e infraestrutura'
+                ,institution_title: 'Conheça o IFRS'
+                , institution_description1: "O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) é uma instituição federal de ensino público e gratuito. Atua com uma estrutura <em>multicampi</em> para promover a educação profissional e tecnológica, a ciência e a tecnologia que impulsionam o desenvolvimento socioeconômico sustentável das regiões de atuação de nossos <em>campi</em>."
+                , institution_description2: "Visando ampliar o impacto positivo nessas regiões, o IFRS desenvolveu <strong>INTEGRA, o Portal da Inovação do IFRS</strong> que possui o objetivo de estimular a execução de projetos de pesquisa, desenvolvimento tecnológico e inovação em parceria com organizações públicas e privadas para atender às demandas dos arranjos produtivos, sociais e culturais."
+                , institution_description3: 'O <strong>INTEGRA</strong> é um sistema para Gestão da Inovação que apresenta o currículo de todos os nossos servidores, incluindo suas produções e expertises, os laboratórios e equipamentos disponíveis para inovação, a vitrine tecnológica de produtos e serviços desenvolvidos no IFRS e disponíveis para transferência, as possibilidades de prestação de serviços. Além disso, o INTEGRA apresenta as organizações que o IFRS já desenvolveu ou desenvolve projetos em parceria e o Escritório de Projetos, responsável pela articulação destes projetos, pelo observatório de editais de fomento externo e pelos espaços do IFRS que estimulam a inovação, criatividade e empreendedorismo, como laboratórios <em>Makers</em> e incubadoras de empreendimentos tecnológicas e sociais.'
+                , docentes: '<strong>{0}</strong><br/>DOCENTES'
+                , tecnicos: '<strong>{0}</strong><br/>TÉCNICOS ADMINISTRATIVOS'
+                , doutores: '<strong>{0}</strong><br/>DOUTORES'
+                , mestres: '<strong>{0}</strong><br/>Mestres'
+                , projetos: '<strong>{0}</strong><br/>Projetos institucionais'
+                , parcerias: '<strong>{0}</strong><br/>Parcerias'
+                , producoes_tecnicas: '<strong>{0}</strong><br/>Produções técnicas'
+                , producoes_bibliograficas: '<strong>{0}</strong><br/>Produções bibliográficas'
+                , outras_producoes: '<strong>{0}</strong><br/>Outras produções'
+                , patentes: '<strong>{0}</strong><br/>Patentes / registros de software'
+                , laboratorios: '<strong>{0}</strong><br/>Laboratórios'
+                , habitats: '<strong>{0}</strong><br/>Habitats de inova&ccedil;&atilde;o'
+                , competencias: '... e algumas de nossas <strong>{0}</strong> compet&ecirc;ncias'
+                , pensando_parceria : 'Está pensando em uma parceria?'
+                , write_us: 'Entre em contato com nosso Escritório de Projetos!'
+                , numbers: 'Números do IFRS e de seus servidores ...'
+                , institution: 'IFRS'
+                , title: 'Portfólio IFRS'
+                , known: 'Conheça o IFRS'
+                , chamada_portal: 'Acesse nosso Portal'
+                , campi_somos: 'Somos&nbsp;<strong>{0}</strong>&nbsp;Unidades'
+                , ultimas_noticias: '<strong>Últimas Notícias</strong> do IFRS'
+                , institution_name: 'Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul'
+                , institution_short_name: 'Instituto Federal do Rio Grande do Sul'
+                , institution_url: 'https://ifrs.edu.br'
+                , url_ep: 'https://ep.ifrs.edu.br'
+                , institution_facebook_url: 'https://www.facebook.com/IFRSOficial'
+                , institution_twitter_url: 'https://twitter.com/IF_RS'
+                , institution_youtube_url: 'https://www.youtube.com/user/ComunicaIFRS'
+                , institution_flickr_url: 'https://www.flickr.com/photos/ifrsoficial/albums'
+                , institution_instagram_url: 'https://www.instagram.com/IFRSOficial/'
+                , copyright: "<strong>Integra - Portal da Inovação</strong> &copy; 2020 IFRS - Desenvolvido pelo <a href='https://ifrs.edu.br/pesquisa-pos-graduacao-e-inovacao/inovacao/nucleo-de-inovacao-tecnologica/' target='_blank'>NIT</a> e <a href='https://ifrs.edu.br/institucional/comunicacao/' target='_blank'>Comunicação</a> do IFRS"
+                , copyright_url: 'https://ifrs.edu.br/pesquisa-pos-graduacao-e-inovacao/inovacao/nucleo-de-inovacao-tecnologica/'
+                , description: "A <strong>Inovação no IFRS</strong> tem como objetivo gerar impacto positivo no desenvolvimento econômico, social e ambiental das regiões onde atuamos, através dos resultados de projetos de pesquisa, desenvolvimento tecnológico e inovação que atendam as demandas da sociedade."
+                , imprensa_header: 'Você é profissional de comunicação e quer agendar entrevistas com servidores ou estudantes do IFRS?'
+                , imprensa_content: 'Para obter informações a respeito de pesquisas, projetos, números institucionais ou qualquer outra pauta do IFRS, faça contato com o Departamento de Comunicação da Reitoria ou com o Setor de Comunicação dos campi.'
+                , imprensa: 'Imprensa'
+                , imprensa_email: 'https://ifrs.edu.br/imprensa/'
+                , demanda_header: 'Tem uma ideia que gostaria de desenvolver junto com o IFRS?'
+                , demanda_content: 'Fale com nosso escritório de projetos para avaliar formas de colaboração.'
+                , demanda: 'Entre em contato'
+                , keyword: '<strong>Temas</strong> Trabalhados'
+            }
+            , footer: {
+                site_contact: {
+                    home: "Tem uma ideia que gostaria de desenvolver com o IFRS?"
+                    , demanda: "Tem uma ideia que gostaria de desenvolver com o IFRS?"
+                    ,home_detail: 'Entre em contato através do formulário ao lado.'
+                    ,perfil: "Fale com<br/><span>{0}</span>"
+                    ,vitrine: "Interessado em<br/><span>{0}</span>"
+                    ,infra: "Entre em contato<br/>com o responsável"
+                }
+                , portal: {
+                    titulo: 'Portal do IFRS'
+                    , url: 'https://ifrs.edu.br/'
+                }
+                , apk: {
+                    gplay: 'Disponível no Google Play'
+                    , gplay_url: 'https://play.google.com/store/apps/details?id=br.edu.ifrs.nit.integra'
+                    , pwa: 'Disponível como PWA - Progressive Web App'
+                }
+                , endereco: {
+                    title: 'Endereço'
+                    , logradouro: 'Rua General Osório'
+                    , numero: '348'
+                    , bairro: 'Centro'
+                    , cidade: 'Bento Gonçalves'
+                    , estado: 'RS'
+                    , cep: '95700-086'
+                    , contato: 'Telefone:&nbsp;<a href="tel:+555434493300">(54) 3449-3300</a>'
+                }
+            }
+            , formacao: {
+                posdoutorado: 'Pós-doutorado'
+                ,doutorado: 'Doutorado em'
+                ,mestrado: 'Mestrado em'
+                ,mestradoProfissionalizante: 'Mestrado Profissionalizante em'
+                ,especializacao: 'Especialização em'
+                ,graduacao: 'Graduação em'
+                ,aperfeicoamento: 'Aperfeiçoamento'
+                ,cursoTecnicoProfissionalizante: 'Curso Técnico Profissionalizante'
+                ,ensinoMedioSegundoGrau: 'Ensino Médio/Segundo Grau'
+                ,ensinoFundamentalPrimeiroGrau: 'Ensino Fundamental/Primeiro Grau'
+            }
+            , perfil: {
+                titulo: 'Perfil'
+                ,lattes_updatedOn: 'Lattes atualizado em:'
+                ,portfolio_updatedOn: 'Portfólio atualizado em:'
+                , resumo: 'Resumo'
+                , curriculo_lattes: 'Currículo Lattes'
+                , producao_cientifica: 'Produ&ccedil;&atilde;o <strong>Cient&iacute;fica</strong>'
+                // DadosGerais
+                , dados_gerais: 'Dados Gerais'
+                , palavras_chaves: 'Principais Palavras Chaves/Competências'
+                , dados_gerais__formacaoAcademicaTitulacao: 'Formação Acadêmica/Titulação'
+                , dados_gerais__atuacoesProfissionais: 'Atuação Profissional'
+                , dados_gerais__direcaoEAdministracao: 'Direção e Administração'
+                , dados_gerais__pesquisaEDesenvolvimento: 'Pesquisa e Desenvolvimento'
+                , dados_gerais__servicoTecnicoEspecializado: 'Serviço Técnico Especializado'
+                , dados_gerais__extensaoUniversitaria: 'Extensão Universitária'
+                , dados_gerais__treinamentoMinistrado: 'Treinamento Ministrado'
+                , dados_gerais__conselhoComissaoEConsultoria: 'Conselho, Comissão ou Consultoria'
+                , dados_gerais__participacaoEmProjeto: 'Participação em Projeto'
+                , dados_gerais__ensino: 'Atuações em Ensino'
+                , dados_gerais__areasDeAtuacao: 'Áreas de Atuação'
+                , dados_gerais__idiomas: 'Idiomas'
+                , dados_gerais__premiosTitulos: 'Prêmios e Títulos'
+                , overview: 'Visão Geral'
+                // Produção Bibliográfica
+                , producao_bibliografica: 'Produção Bibliográfica'
+                , producao_bibliografica__livros: 'Livros Publicados ou Organizados'
+                , producao_bibliografica__capituloDeLivroPublicado: 'Capítulos de Livros Publicados'
+                , producao_bibliografica__artigos: 'Artigos Publicados'
+                , producao_bibliografica__trabalhos_em_eventos: 'Trabalhos em Eventos'
+                , producao_bibliografica__livros_capitulos: 'Livros e Capítulos'
+                , producao_bibliografica__textos_jornais_revistas: 'Textos Em Jornais Ou Revistas'
+                , producao_bibliografica__artigos_aceitos_para_publicacao: 'Artigos Aceitos para Publicação'
+                // Produção Técnica
+                , producao_tecnica: 'Produção Técnica'
+                , producao_tecnica__patente: 'Patente'
+                , producao_tecnica__cultivar_registrada: 'Cultivar Registrada'
+                , producao_tecnica__software: 'Software'
+                , producao_tecnica__cultivar_protegida: 'Cultivar Protegida'
+                , producao_tecnica__desenho_industrial: 'Desenho Industrial'
+                , producao_tecnica__marca: 'Marca'
+                , producao_tecnica__topografia_de_circuito_integrado: 'Topografia De Circuito Integrado'
+                , producao_tecnica__produto_tecnologico: 'Produto Tecnológico'
+                , producao_tecnica__processos_tecnicas: 'Processos Ou Técnicas'
+                , producao_tecnica__trabalho_tecnico: 'Trabalho Técnico'
+                , producao_tecnica__demaisTiposDeProducaoTecnica: 'Demais Tipos De Producao Técnica'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_apresentacaoDeTrabalho: 'Apresentação De Trabalho'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_cursoDeCurtaDuracaoMinistrado: 'Curso De Curta Duração Ministrado'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_desenvolvimentoDeMaterialDidaticoOuInstrucional: 'Desenvolvimento De Material Didático Ou Instrucional'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_editoracao: 'Editoração'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_manutencaoDeObraArtistica: 'Manutenção De Obra Artística'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_maquete: 'Maquete'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_organizacaoDeEvento: 'Organização De Evento'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_relatorioDePesquisa: 'Relatório De Pesquisa'
+                , producao_tecnica__demaisTiposDeProducaoTecnica_midiaSocialWebsiteBlog: 'Mídia Social Website ou Blog'
+                // OutraProdução
+                , producao_outra: 'Outra Produção'
+                , producao_artistica_cultural: 'Produção Artística e Cultural'
+                , producao_outra__outrasOrientacoesConcluidas: 'Outras Orientações Concluídas'
+                , producao_outra__orientacoesConcluidasParaMestrado: 'Orientações Concluídas Para Mestrado'
+                , producao_outra__orientacoesConcluidasParaDoutorado: 'Orientações Concluídas Para Doutorado'
+                , producao_outra__orientacoesConcluidasParaPosDoutorado: 'Orientações Concluídas Para Pós Doutorado'
+                , producao_outra__demaisTrabalhos: 'Demais Trabalhos'
+                , producao_outra__producaoArtisticaCultural__apresentacaoDeObraArtistica: 'Apresentação de Obra Artística'
+                , producao_outra__producaoArtisticaCultural__apresentacaoEmRadioOuTv: 'Apresentação em Rádio ou TV'
+                , producao_outra__producaoArtisticaCultural__arranjoMusical: 'Arranjo Musical'
+                , producao_outra__producaoArtisticaCultural__composicaoMusical: 'Composição Musical'
+                , producao_outra__producaoArtisticaCultural__obraDeArtesVisuais: 'Obra de Artes Visuais'
+                , producao_outra__producaoArtisticaCultural__outraProducaoArtisticaCultural: 'Outra Produção Artística Cultural'
+                , producao_outra__producaoArtisticaCultural__sonoplastia: 'Sonoplastia'
+                , producao_outra__producaoArtisticaCultural__artesCenicas: 'Artes Cênicas'
+                , producao_outra__producaoArtisticaCultural__artesVisuais: 'Artes Visuais'
+                , producao_outra__producaoArtisticaCultural__musica: 'Música'
+                , projeto: 'Projetos'
+                , dspace: 'Repositório Institucional'
+                , doi_url: 'http://dx.doi.org/'
+                , lattes_no: 'Não possui currículo lattes cadastrado'
+                , alerta_nuvem: '*Nuvem de palavras referente aos servidores listados na aba \'Pessoas\'.'
+            }
+            , infra: {
+              titulo: 'Laboratórios'
+              , descricao: 'Conheça os laboratórios e habitats de inovação que fazem parte da infraestrutura do IFRS.'
+              , contato: 'Contato:'
+              , endereco_institucional: 'Endereço Institucional'
+              , regulamento: 'Regulamento/Política'
+              , agenda: 'Agenda'
+              , area: 'Área de atuação:'
+              , equipamentos: 'Equipamentos:'
+              , software: 'Softwares:'
+              , servicos: 'Serviços Realizados:'
+              , tipo: 'Tipo de Infraestrutura'
+              , select_default: 'Selecione Campus'
+              , search: 'Procure laboratórios, habitats e grupos de pesquisa'
+              , grupo_coordenador: 'Coordenador(a) do Grupo'
+              , grupo_area: 'Área predominante de atuação:'
+            }
+            , producoes: {
+              titulo: 'Produções'
+              ,descricao: 'Conheça as produções técnicas, bibliográficas, artísticas e culturais dos servidores do IFRS, assim como os projetos institucionais de ensino, pesquisa e extensão.'
+              ,
+            }
+            , pessoas: {
+                header_people: 'Servidores'
+                ,titulo: 'Pessoas'
+                ,grupos: 'Grupos de Pesquisa CNPq'
+                ,descricao: 'Conheça os professores, técnicos e grupos de pesquisa do IFRS, assim como suas áreas de atuação.'
+                ,header_wordcloud: 'Principais Palavras Chaves'
+                ,table_header_nome: 'Nome'
+                ,table_header_cargo: 'Cargo'
+                ,table_header_campus: 'Campus'
+                ,search: 'Procure docentes e técnicos'
+            }
+            , rede: {
+              titulo: 'Rede Integra',
+              que_encontrar: 'O que <strong>encontrar</strong>?',
+              quem_somos: 'Conheça as unidades pertencentes à Rede Integra',
+              ict_somos: 'Somos&nbsp;<strong>{0}</strong>&nbsp; instituições<br/>em&nbsp;<strong>{1}</strong>&nbsp;unidades',
+              descricao: {
+                rede: '<p>A <strong>Rede Integra</strong> é composta por Instituições de Ciência e Tecnologia que utilizam o <strong><a href="https://integra.ifrs.edu.br/vitrine/integra" target="_blank">Portal Integra</a></strong> como plataforma de Gestão da Inovação.</p><p>Consulte, em um único lugar, as competências e expertises de todos servidores, as tecnologias e patentes disponíveis para transferência bem como a infraestrutura de apoio à projetos de inovação e desenvolvimento tecnológico das instituições que fazem parte da rede.</p>',
+                pessoas: 'Conheça todos os servidores das instituições da <strong>Rede Integra</strong>, procurando por qualquer informação em seus currículos.',
+                vitrine: 'Conheça todas as tecnologias desenvolvidas pelas instituições da <strong>Rede Integra</strong> disponíveis para transferência, licenciamento ou desenvolvimento em conjunto com organizações externas.',
+                laboratorios: 'Conheça todos os laboratórios das instituições da <strong>Rede Integra</strong>, procurando por qualquer informação presente em suas descrições e equipamentos.',
+              },
+              subdescricao: {
+                pessoas: "Conheça as competências e expertises de <span style='font-size: 1.1em;border-color: #e9785e;background-color: #e9785e;font-weight: bold;'>&nbsp;{0}&nbsp;</span> servidores das instituições que fazem parte da Rede Integra, procurando por qualquer informação em seus currículos.",
+                vitrine: "Conheça as <span style='font-size:1.1em;border-color: #e9785e;background-color: #e9785e;font-weight: bold;'>&nbsp;{0}&nbsp;</span> patentes e tecnologias desenvolvidas pelas instituições que fazem parte da Rede Integra disponíveis para transferência.",
+                laboratorios: "Conheça os <span style='font-size:1.1em;border-color: #e9785e;background-color: #e9785e;font-weight: bold;'>&nbsp;{0}&nbsp;</SPAN> laboratórios das instituições que fazem parte da Rede Integra, procurando por descrições, seus equipamentos e serviços.",
+              },
+              mensagem: 'Consulta ainda não está disponível, o <b>{0}</b> está em processo de implantação do <b>Integra - Portal da Inovação</b>.<br/>Para maiores informações, entre em contato com <a href="mailto:nit@ifrs.edu.br" target="_blank">nit@ifrs.edu.br</a>.',
+            }
+            , projeto: {
+                form: {
+                    title: 'Detalhes do Projeto'
+                    , nome: 'Nome do Projeto:'
+                    , dataInicio: 'Início do Projeto:'
+                    , dataTermino: 'Término do Projeto:'
+                    , vigencia: 'Vigência do Projeto'
+                    , coordenador: 'Coordenador(a)'
+                    , instituicao: 'Instituição'
+                    , unidadeGeral: 'Unidade Geral'
+                    , edital: 'Edital'
+                    , situacao: 'Situação'
+                    , modalidade: 'Modalidade'
+                    , areaDeConhecimentoCnpq: 'Área do CNPq'
+                    , grupoDePesquisa: 'Grupo de Pesquisa'
+                    , linhaDePesquisa: 'Linha de Pesquisa'
+                    , tipo: 'Tipo'
+                }
+                , parceria: {
+                    title: 'Parcerias do Projeto'
+                    , nomeParceria: 'Entidade Parceira:'
+                    , siglaParceria: 'Sigla da Entidade Parceira:'
+                    , tipoParceria: 'Tipo de Parceria'
+                    , siglaInstituicao: 'Sigla da Inst. Parceira'
+                    , tipoInstituicao: 'Tipo de Instituição'
+                    , especificacao: 'Descrição da Parceria'
+                }
+            }
+            , palavra_chave: 'Palavras-chave:'
+            , empty: 'Não informado'
+            , noticias_todas: 'Acesse todas notícias'
+            , noticias_todas_url: 'https://ifrs.edu.br/noticias/'
+            , prestacao_info: "Habilitado para prestação de serviços institucionais visando ofertar serviços e soluções para as demandas da comunidade externa. Mais informações <a href='https://ifrs.edu.br/extensao/prestacao-institucional-de-servicos/' target='_blank'>aqui</a>."
+            , production_search: 'Procure produções técnicas, bibliográficas e projetos'
+            , ensino: 'Ensino'
+            , pesquisa: 'Pesquisa'
+            , extensao: 'Extensão'
+            , atualizadoEm: 'Última atualização em'
+            , resultado_vazio: '<strong>A pesquisa n&atilde;o encontrou resultados para o(s) crit&eacute;rio(s) informado(s).</strong><br/>Certifique-se de que todas as palavras estejam escritas corretamente ou tente termos mais gen&eacute;ricos.'
+            , criterio: {
+              campus: 'Selecione o campus',
+              area: 'Selecione a Área',
+              categoria: 'Selecione a categoria',
+              pi: 'Selecione a propriedade intelectual',
+              atuacao: 'Selecione o tipo de atuação',
+              etapa: 'Selecione a etapa',
+              tipo: 'Selecione o tipo',
+              titulo: 'Informe o título',
+              visibilidade: 'Selecione a visibilidade',
+              visibilidade_org_1: 'Todas organizações',
+              visibilidade_org_2: 'Organizações que tenho acesso',
+              visibilidade_par_1: 'Todas Parcerias',
+              visibilidade_par_2: 'Parcerias que tenho acesso',
+              criterio: 'Informe o Critério',
+              entidadeFinanciadora: 'Entidade financiadora',
+              tipoFomento: 'Tipo de fomento',
+              nome: 'Informe o nome',
+              filtro: '<span class="sr-only">Mostrar/Esconder&nbsp;</span>Filtros&nbsp;<i class="fas fa-filter"/>',
+            }
+            , botao: {
+              saiba_mais: 'Saiba mais',
+              limpar: 'Limpar',
+              buscar: 'Buscar',
+              enviar: 'Enviar',
+              salvar: 'Salvar',
+              editar: 'Editar',
+              excluir: 'Excluir',
+              cancelar: 'Cancelar',
+              voltar: 'Voltar',
+              acessar: 'Acessar',
+              recomendar: 'Recomendar',
+              notificar: 'Notificar',
+            }
+            , admin: {
+              subtitulo: 'Área administrativa do',
+            },
+        },
+        ep: {
+          titulo: 'Escritório de Projetos',
+          titulo_completo: 'Escritório de Projetos',
+          sub_titulo: 'Conheça ações de apoio a projetos e habitats de inovação',
+          de_inovacao: 'de Inovação',
+          o_que_fazemos: 'O que <strong>fazemos</strong>',
+          descricao: 'Atua como articulador entre o IFRS e organizações públicas e privadas, apresentando soluções inovadoras para as demandas da comunidade externa, firmando parcerias e cooperação tecnológica e social. É responsável pela estruturação dos habitats de empreendedorismo e inovação e pela divulgação de editais externos.',
+          todos_fluxos: 'Acesse todos os fluxos',
+          menu: {
+              institucional: 'Institucional',
+              habitats: 'Habitats de Inovação',
+              fluxos: 'Fluxos e Normas',
+              fomento: 'Fomentos Externos',
+              videoteca: 'Videoteca',
+          },
+          contato: {
+            titulo: 'Encontre-nos',
+            endereco: "Rua Corte Real, 142 - Bairro Petrópolis<br/>CEP: 90630-080 Porto Alegre/RS",
+            email: 'escritorio.projetos@ifrs.edu.br',
+          },
+          apresentacao: {
+            chamada1: 'Apoio para Projetos Cooperados',
+            descricao1: 'Suporte e acompanhamento para Projetos de Inovação Tecnológica e Social em parceria com Instituições Públicas e Privadas e interlocução com Fundações de Apoio.',
+            chamada2: 'Captação de Recursos para Eventos e Projetos',
+            descricao2: 'Suporte para elaboração de chamada pública para captação de recursos e patrocínios para eventos e projetos.',
+            chamada3: 'Prestação de Serviços',
+            descricao3: 'Apoio na elaboração e estruturação de projetos que visem a oferta de prestação de serviços.',
+            chamada4: 'Articulação e fortalecimento dos Habitats de Inovação',
+            descricao4: 'Apoio para a implantação e estruturação de incubadoras, fablabs, espaços makers e outros espaços criativos e inovadores.',
+          },
+          fomento: {
+            flag: 'Gostaria de receber e-mails com novas recomendações de editais de fomento externo',
+            recomendados: 'Recomendados',
+            vigentes: 'Vigentes',
+            encerrados: 'Encerrados',
+            avaliacao: 'Em Avaliação',
+            nenhum: 'Nenhum',
+            todos: 'Acesse todos os Editais',
+            notifique: 'Notifique um fomento',
+          },
+          videoteca: {
+            descricao: 'A Videoteca apresenta palestras, minicursos e transmissões sobre inovação, empreendedorismo, habitats de inovação, legislação, propriedade intelectual e novas tecnologias.'
+          },
+          habitats: {
+            descricao: 'Habitats de inovação são espaços que estimulam o compartilhamento de conhecimento, promovem experiências criativas e desenvolvem empreendedorismo a partir do trabalho colaborativo de servidores, estudantes e agentes da sociedade.',
+            chamada: 'O IFRS apoia cada etapa de sua jornada de inovacão e empreendedorismo.',
+            subchamada: 'Obtenha suporte através de assessoria e infraestrutura para seus projetos.',
+            incubados: 'Empreendimentos <strong>Incubados</strong>',
+            fazemos_titulo_1: 'Pré-Incubação',
+            fazemos_subtitulo_1: 'Apoiamos a transformação de sua ideia a partir da formulação da proposta de valor e da modelagem do negócio.',
+            fazemos_duracao_1: 'até 6 meses.',
+            fazemos_prereq_1: 'ter uma ideia de negócio potencialmente inovadora.',
+            // fazemos_url_saiba_mais_1: 'http://integra.ifrs.edu.br',
+            fazemos_titulo_2: 'Incubação',
+            fazemos_subtitulo_2: 'Apoiamos a transformação de seu projeto em negócio a partir da construção de um MVP funcional, validação de hipótese e formalização da empresa.',
+            fazemos_duracao_2: 'até 12 meses.',
+            fazemos_prereq_2: 'ter um modelo de negócio e proposta de valor definidos.',
+            // fazemos_url_saiba_mais_2: 'http://integra.ifrs.edu.br',
+            fazemos_titulo_3: 'Fabricação Digital',
+            fazemos_subtitulo_3: 'Fomentamos a Cultura Maker através da execução de projetos em nossos laboratórios de fabricação digital e prototipação.',
+            fazemos_duracao_3: 'atendimento contínuo.',
+            fazemos_prereq_3: 'não há.',
+            // fazemos_url_saiba_mais_3: 'http://integra.ifrs.edu.br',
+          },
+          fluxos_e_processos_descricao: 'Em conformidade com a <a href="https://ifrs.edu.br/pesquisa-pos-graduacao-e-inovacao/inovacao/politica-de-inovacao/" target="_blank">Política de Inovação do IFRS</a> e com o <a href="https://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2018/Decreto/D9283.htm" target="_blank">Marco Legal da Ciência, Tecnologia e Inovação (CT&I)</a>, os fluxos e normas apresentam aos servidores as leis, normas, processos e documentos necessários para estabelecimentos de parcerias, prestação de serviços e captação de recursos, com a possibilidade do uso de Fundação de Apoio.',
+          fomento_externo_descricao: 'Apresenta oportunidades de fomento para projetos de Pesquisa, Desenvolvimento e Inovação (P,D&I) a partir de diversas fontes externas de financiamento, incluindo um sistema de recomendação com base na área de atuação do servidor do IFRS.',
+          fluxo_geral_slug: 'fluxo--visao-geral-dos-tipos-de-parceria'
+        },
+        vitrine: {
+          titulo: 'Vitrine Tecnológica',
+          titulo_completo: 'Vitrine Tecnológica do IFRS',
+          oportunidades: 'Oportunidades de <strong>Produtos ou Serviços</strong>',
+          destaques: 'Destaques da <strong>Vitrine Tecnol&oacute;gica</strong> do IFRS',
+          chamada: 'Interessado em um produto ou serviço do IFRS?',
+          chamada_contato: 'Entre em contato com nosso Núcleo de Inovação Tecnológica (NIT) para conversarmos sobre a oportunidades.',
+          sub_titulo: 'Conheça tecnologias e soluções disponíveis para sociedade',
+          atualiza_rpi: 'Atualiza RPI',
+          informe: 'Informe sua Tecnologia',
+          descricao: 'A Vitrine Tecnológica do IFRS apresenta os produtos desenvolvidos em projetos de pesquisa, ensino ou extensão, protegidos ou não, e passíveis de transferência, licenciamento ou desenvolvimento conjunto com empresas ou instituições interessadas.',
+          maturidade: {
+              fase11: "Modelos Teóricos",
+              fase12: "Ensaios Laboratoriais",
+              fase13: "Escala Piloto",
+              fase14: "Escala Final / Completa",
+              fase21: "Prova de Conceito",
+              fase22: "Protótipos",
+              fase23: "Mercado",
+              "1": {
+                titulo: 'Princípios básicos observados e reportados',
+                desc: 'A pesquisa científica começa a ser traduzida em pesquisa e desenvolvimento, no entanto, sem realização de investigação aplicada, nem desenvolvimento.',
+                fases: [
+                  '@:vitrine.maturidade.fase11',
+                  '@:vitrine.maturidade.fase21',
+                ],
+                requisitos: [
+                  'Definição de premissas e leis físicas para definição da nova tecnologia',
+                  'Existem alguns conceitos que podem ser utilizados para definição da tecnologia',
+                  'Definição em nível genérico do que a tecnologia pode fazer',
+                  'Produção científica confirma os princípios básicos',
+                  'Existe uma ideia que captura os princípios básicos da tecnologia',
+                  'Observações científicas preliminares documentadas em relatórios técnicos, periódicos e conferências',
+                  'Observados Princípios científicos básicos',
+                  'Identificação de potenciais interessados e patrocinadores da tecnologia',
+                  'Formulação das hipóteses científicas',
+                  'Identificação de quem pode desenvolver a pesquisa ou onde ela pode ser feita',
+                ],
+              },
+              "2": {
+                titulo: 'Concepção tecnológica e/ou aplicação formulada',
+                desc: 'Uma vez que princípios básicos foram observados, aplicações práticas são propostas ou têm algum grau de sustentação. No entanto, são especulativas, podendo não haver provas ou análise detalhada para sustentá-las.',
+                fases: [
+                  '@:vitrine.maturidade.fase11',
+                  '@:vitrine.maturidade.fase21',
+                ],
+                requisitos: [
+                  'Identificação de interessados',
+                  'Identificação de potenciais sistemas ou componentes da tecnologia',
+                  'Caracterização parcial dos componentes da tecnologia',
+                  'Predições de performance e desempenho dos componentes',
+                  'Produção científica demonstram a viabilidade da tecnologia',
+                  'Identificação do escopo de atuação da tecnologia',
+                  'Identificação de um projeto empírico ou projeto aparentemente teórico',
+                  'Elementos básicos da tecnologia foram identificados',
+                  'Interesse demonstrado pelo público alvo',
+                  'Prova de conceito confirmam os princípios básicos da tecnologia',
+                  'Análise preliminar demonstram quais principais funções precisam ser desenvolvidas',
+                  'Modelagem e simulação usada para verificar princípios físicos',
+                  'Definição da arquitetura do sistema considerando as principais funcionalidades',
+                  'Realização de experimento com dados sintéticos',
+                  'Definição do sistema de rastreamento de requisitos',
+                  'Confirmação de princípios básicos a partir de rigorosos estudos analíticos',
+                  'Divulgação de estudos analíticos através de produção bibliográfica',
+                  'Funcionamento parcial da tecnologia, sem integração com o ambiente real',
+                  'Definição de hardware e software necessários para tecnologia',
+                  'Definição dos dispositivos de saída disponíveis',
+                  'Definição de uma estratégia de investimento',
+                  'Conhecimento das capacidades e limitações dos pesquisadores e laboratórios de tecnologia',
+                  'Identificação dos experimentos necessários para tecnologia (abordagem científica)',
+                  'Conhecimento básico qualitativo de áreas de risco (custo, tempo, desempenho)',
+                  'Identificação preliminar do mercado da tecnologia (quem estaria interessado, como eles conheceriam esta tecnologia?)',
+                ],
+              },
+              "3": {
+                titulo: 'Prova de conceitos das funções críticas de forma analítica ou experimental',
+                desc: 'Pesquisa e desenvolvimento é iniciada, como prova de conceito preliminar, envolvendo estudos analíticos e laboratoriais para a validação físico-analítica dos componentes isolados da tecnologia.',
+                fases: [
+                  '@:vitrine.maturidade.fase12',
+                  '@:vitrine.maturidade.fase21',
+                ],
+                requisitos: [
+                  'Ambiente acadêmico',
+                  'Predição dos elementos validados das potencialidades da tecnologia através de estudos analíticos',
+                  'Estudos analíticos verificam premissas, produção de algoritmos',
+                  'Conhecimento científico para estender modelos matemáticos e/ou computacionais e simulações',
+                  'Características preliminares da performance do sistema e medidas foram identificadas e estimadas',
+                  'Mapeamento de algoritmos computacionais disponíveis',
+                  'Predição da capacidade dos elementos da tecnologia validados por modelagem e simulação',
+                  'Codificação preliminar verifica que o software pode satisfazer as necessidades operacionais',
+                  'Sem componentes do sistema, apenas pesquisa laboratorial básica utilizando equipamentos para verificar princípios físicos',
+                  'Experimentos laboratoriais verificam a viabilidade da aplicação',
+                  'Identificação de clientes representativos para cooperação no desenvolvimento',
+                  'Clientes finais participam no levantamento e definição de requisitos',
+                  'Deve-se identificar os efeitos de tecnologia cruzada (caso existam)',
+                  'Produção bibliográfica indica que os componentes do sistema conseguem ser integrados',
+                  'Cliente identifica uma janela de transição da oportunidade',
+                  'Métricas são definidas',
+                  'Estudos de escalabilidade iniciaram',
+                  'Experimentos foram executados com um pequeno conjunto de sujeitos (datasets) representativos',
+                  'Aquisição de conceitos de manufatura atuais',
+                  'Identificação de quais softwares existentes e disponíveis executam tarefas similares',
+                  'Análise de software existentes visando possível reuso',
+                  'Identificação da necessidade para produção de componentes chaves',
+                  'Conhecimento sobre as limitações das tecnologias concorrentes (análise completa)',
+                  'Viabilidade científica completamente demonstrada',
+                  'Análise do atual estado da arte demonstra que a tecnologia atende uma necessidade',
+                  'Áreas de risco são identificadas em termos genéricos',
+                  'Identificação de estratégias para mitigação de riscos',
+                  'Desenvolvida uma análise rudimentar de melhor análise de valor, não incluindo fatores de custo',
+                ],
+              },
+              "4": {
+                titulo: 'Validação em ambiente de laboratório de componentes ou arranjos experimentais básicos de laboratório',
+                desc: 'Componentes básicos da tecnologia são desenhados, desenvolvidos e integrados para verificação de que funcionam em conjunto. Validação em ambiente de laboratório de componentes ou arranjos experimentais básicos de laboratório.',
+                fases: [
+                  '@:vitrine.maturidade.fase12',
+                  '@:vitrine.maturidade.fase22',
+                ],
+                requisitos: [
+                  'Identificação completa (caso exista) de problemas de tecnologias acessórias',
+                  'Utilização de componentes ad hoc ou de laboratório como substitutos para estudo de viabilidade',
+                  'Componentes individuais testados em laboratório/por fornecedores (teste de aceitação de componentes)',
+                  'Peças, partes e componentes estão na forma de pré-produção',
+                  'Simulação da integração de componentes e interface entre componentes',
+                  'Início do desenvolvimento da arquitetura formal do sistema',
+                  'Publicação do documento de especificação de requisitos',
+                  'Conhecimento completo dos requisitos do sistema para usuários finais',
+                  'Definição de métricas de performance do sistema',
+                  'Análise fornece conhecimento detalhado de funções específicas que a tecnologia deve desempenhar',
+                  'Requisitos de laboratórios são derivados da formalização dos requisitos do sistema',
+                  'Os componentes disponíveis do sistema são montados em placa de ensaio (breadboard)',
+                  'Experimentos em laboratório com os componentes disponíveis demonstram que podem ser integrados (kludge)',
+                  'Requisitos estabelecidos para cada função',
+                  'Análise concluída dos requisitos de dados e formatos',
+                  'Módulos independentes utilizados para o plano arquitetural do sistema',
+                  'Projeto verificado a partir de um processo de inspeção formal',
+                  'A tecnologia demonstra sua funcionalidade básica em um ambiente simplificado',
+                  'É capaz de estimar o tamanho do software em pontos de função',
+                  'Foram produzidos protótipos escaláveis da tecnologia',
+                  'Rascunhos de projetos conceituais foram documentados',
+                  'Técnicas de projeto identificadas/definidas onde pequenas aplicações podem ser analisadas/simuladas',
+                  'Ambiente de laboratório controlado',
+                  'Identificação de orientações de custos iniciais',
+                  'Experimentação com problemas de grande escala e conjunto de dados representativos',
+                  'Estudos de integração foram iniciados',
+                  'Definição de conjunto de alvos para CAIV (Cost As an Independent Variable)',
+                  'Funcionalidades individuais ou modulares demonstradas em laboratório',
+                  'Identificação de processos chaves de manufatura',
+                  'Conclusão de documentação e diagramas para escalabilidade da tecnologia',
+                  'Algumas funções de integração de módulos demonstram compatibilidade',
+                  'Auditoria em laboratório de processos chaves de manufatura',
+                  'Rascunho do Plano Mestre de Engenharia de sistemas (SEMP - Systems Engineering Master Plan)',
+                  'Integração e engenharia da tecnologia em baixa fidelidade em ambiente de laboratório',
+                  'Identificação de estratégias de mitigação para endereçar problemas de manufatura e produção',
+                  'Público alvo comprometido com a transição da tecnologia e com aval da comissão de ética',
+                  'Estrutura análitica e funcional desenvolvida',
+                  'Formalização do time de integração do produto com representação do público alvo',
+                  'Inicialização do programa de gestão formal de riscos',
+                  'Definição preliminar do Modo de Segurança e Análise de Efeito (FMEA - Failure Mode and Effects Analysis) ou a performance da Análise de Cascata de Riscos',
+                  'Definição de data para disponibilização da tecnologia',
+                ],
+              },
+              "5": {
+                titulo: 'Validação em ambiente relevante de componentes ou arranjos experimentais com configurações físicas finais',
+                desc: 'Os componentes tecnológicos básicos são integrados com elementos de suporte razoavelmente realísticos, possibilitando testes em ambiente relevante e com maior fidelidade, em relação ao nível anterior. A validação ocorre em ambiente relevante de componentes ou arranjos experimentais com configurações físicas finais.',
+                fases: [
+                  '@:vitrine.maturidade.fase12',
+                  '@:vitrine.maturidade.fase22',
+                ],
+                requisitos: [
+                  'Efeitos de tecnologias acessórias(caso exista) foram identificados e estabelecidos a partir de análise',
+                  'Pré-produção de hardware disponível',
+                  'Conhecimento dos requisitos de interface do sistema',
+                  'Fluxo de requisitos do sistema a partir de sua estrutura analítica (início da engenharia do sistema)',
+                  'Arquitetura do software estabelecida',
+                  'Estabelecimento de alvos para melhoria da produção',
+                  'Descrição de interfaces externas como origem, formato, estrutura, conteúdo e método de apoio',
+                  'Conclusão da análise de interface de requisitos internos',
+                  'Experimentos laboratoriais definem os processos chaves de manufatura',
+                  'As interfaces entre componentes e subsistemas são realistas (placa de ensaio/breadboard com interfaces realistas)',
+                  'Mudanças significativas de projeto e engenharia',
+                  'Codificação concluída de funcionalidades e módulos',
+                  'Protótipos foram criados',
+                  'Ferramental e máquinas demonstradas em laboratório',
+                  'Conclusão da integração em alta fidelidade do sistema em laboratório, pronto para testar em um ambiente realista ou simulado',
+                  'Técnicas de projeto foram definidas para apontar onde estão definidos os maiores problemas',
+                  'Encaminhamento da forma, conteúdo e funções da aplicação da tecnologia em cooperação com os público alvo',
+                  'Melhoria da fidelidade do sistema migrando das placas de ensaio (breadboard) para placas protótipo (brassboard)',
+                  'Início da análise de qualidade e confiabilidade, mas sem definição de níveis e metas',
+                  'Combinação de componentes de propósito especial com componentes disponíveis no laboratório',
+                  'Modificação do ambiente de laboratório para se aproximar do ambiente operacional',
+                  'Levantamento inicial das necessidades de montagem',
+                  'Modelagem completa e detalhada do projeto não foi concluída',
+                  'Necessidade dos níveis sigma para atendimento do CAIV (Cost As an Independent Variable)',
+                  'Rascunhos da integração',
+                  'Processos de produção foram revisados com o escritório de manufatura e produtibilidade',
+                  'Tradução de medidas para a expectativa de desempenho final',
+                  'Documentação da gestão do plano de riscos',
+                  'As funções foram integradas em módulos',
+                  'Unificação do planejamento da gestão de configuração',
+                  'Funções individuais testadas para verificar que funcionam integradas',
+                  'Teste de erros e falhas em módulos e funções',
+                  'Demonstração em ambiente de laboratório da integração de módulos e funções',
+                  'Inspeção formal concluída de todos os módulos/componentes como parte do gerenciamento de configuração',
+                  'Documentação do plano de gestão de configuração',
+                  'Rascunho do plano mestre de teste e avaliação (TEMP - Test & Evaluation Master Plan)',
+                  'Algoritmos rodam em processadores com características representativas do ambiente final',
+                  'Cliente se compromete na transição através de documentação formal (POM - Program Objective Memorandum)',
+                  'Definição de um plano de transição em um caso de negócio',
+                  'Execução de Módulo de Falha e Análise de Efeito (FMEA)',
+                  'Análise de valor inclui a análise de múltiplas tecnologias e alternativas não-materiais',
+                  'Estrutura analítica física disponível',
+                  'Análise de valor inclui análise do custo do ciclo de vida',
+                ],
+              },
+              "6": {
+                titulo: 'Modelo do sistema/subsistema protótipo de demonstrador em ambiente relevante',
+                desc: 'Modelo do sistema / subsistema protótipo, com configuração da tecnologia mais avançada em relação ao nível anterior, é demonstrado em ambiente relevante, significantemente mais representativo em termos de finalização.',
+                fases: [
+                  '@:vitrine.maturidade.fase13',
+                  '@:vitrine.maturidade.fase22',
+                ],
+                requisitos: [
+                  'Conclusão de validações de características de performance e medidas de problemas de tecnologias acessórias',
+                  'Definição de níveis de qualidade e confiabilidade',
+                  'Ocorrência frequente de mudanças de projeto arquitetural',
+                  'Rascunhos de modelos de projeto estão quase completos',
+                  'Conhecimento sobre o eventual ambiente de produção',
+                  'Levantamento inicial de dados reais de manutenibilidade, confiabilidade e suportabilidade.',
+                  'Identificação do projeto de objetivos de custo',
+                  'Definição das necessidades de investimento para infraestrutura',
+                  'Modelagem e simulação usada para simular o desempenho da tecnologia em um ambiente operacional',
+                  'Finalização do Plano Mestre de Teste e Avaliação (TEMP - Test & Evaluation Master Plan)',
+                  'Teste de aceitação do sistema de fabricação em ambiente de laboratório',
+                  'Teste do modelo representativo/protótipo de alta fidelidade simulado em um ambiente operacional',
+                  'Ambiente operacional fora do laboratório, mas não o eventual ambiente operacional',
+                  'Conclusão das interfaces externas de inventário',
+                  'Atualização do Acordo de Transferência de Tecnologia',
+                  'Problemas de escalabilidade remanescentes são identificadas e análise de suportabilidade é concluída',
+                  'Conclusão da análise das restrições de tempo',
+                  'Conclusão da análise das interfaces e estruturas do banco de dados',
+                  'Início da definição de processo de controle de interface',
+                  'Rascunho do plano de implantação em produção foi revisado pelo usuário final e desenvolvedores',
+                  'Prototipação dos processos críticos de manufatura',
+                  'A maioria dos hardwares de pré-produção estão disponíveis',
+                  'O Acordo de Transferência de Tecnologia foi coordenado e aprovado pelo usuário final/patrocinador',
+                  'Implementação do protótipo inclui funcionalidades para lidar com problemas grandes, realísticos e de larga escala',
+                  'Algoritmos integrados com hardwares existentes e sistemas de software',
+                  'Métodos de integração, materiais, processos e projetos foram empregados',
+                  'Todos os módulos individuais foram testados para verificar que o módulo de componentes (funções) funcionam integrados',
+                  'Especificação das tecnologias do sistema está completa',
+                  'Os componentes são funcionalmente compatíveis com sistemas operacionais',
+                  'Representativos sistemas de softwares ou protótipos foram testados em ambiente de laboratório',
+                  'Sistemas de laboratório são protótipos funcionais de alta fidelidade de sistemas operacionais',
+                  'Foi definido o Programa Formal de Gestão de Configuração para o processo de controle de mudanças',
+                  'Demonstrações de integração estão concluídas',
+                  'Relatório Técnico Final',
+                  'Problemas de produção foram identificadas e as maiores foram resolvidas',
+                  'Disponização limitada de documentação de software',
+                  'Inicialização da Verificação, Validação e Acreditação (Verification, Validation and Accreditation- VV&A)',
+                  'Processos e ferramental estão maduros',
+                  'Demonstrações em produção estão completas',
+                  'Lançamento da versão "Alpha" do software',
+                  'Viabilidade da engenharia está completamente demonstrada',
+                  'Plano de Transição Final com caso de negócio',
+                  'Definição de Marcos do Programa de Aquisição',
+                  'Análise de Valor incluindo caso de negócio',
+                  'Alternativas técnicas incluindo "caso de não fazer nada"',
+                  'Documento de requisitos formais disponível',
+                ],
+              },
+              "7": {
+                titulo: 'Protótipo do demonstrador do sistema em ambiente operacional',
+                desc: 'Protótipo com configuração próxima ou exata à aplicação em ambiente operacional. Representa evolução significativa em relação ao nível anterior, requerendo demonstração em ambiente operacional.',
+                fases: [
+                  '@:vitrine.maturidade.fase14',
+                  '@:vitrine.maturidade.fase23',
+                ],
+                requisitos: [
+                  'Materiais, processos, métodos e técnicas de projeto foram identificadas',
+                  'Processos e procedimentos de materiais e manufatura inicialmente demonstrados',
+                  'Modelagem e simulação usada para simular alguns elementos indisponíveis, mas que estas instâncias são raras',
+                  'Cada interface do sistema/software foi testada individualmente em condições anômalas e de estresse',
+                  'Algoritmos embarcados executam em processadores do sistema operacional',
+                  'O processo de Verificação, Validação e Acreditação (Verification, Validation and Accreditation- VV&A) verifica que as especificações estão em conformidade com o software',
+                  'Processo de inspeção/teste de equipamento demonstrados em ambiente de produção',
+                  'Prova em maquinário e ferramental',
+                  'Mudanças de projeto diminuem significativamente',
+                  'Ambiente operacional, mas a eventual plataforma (ex.: maquinário agrícola, automóvel)',
+                  'Dados de manutenibilidade, confiabilidade e suportabilidade está abaixo dos 60% do total de dados necessários',
+                  'Conclusão do modelo do projeto',
+                  'Materiais, processos, métodos e técnicas de projeto estão moderadamente desenvolvidas e verificadas',
+                  'Escalabilidade está completa',
+                  'Hardware para pré-produção está disponível, quantidades podem estar limitadas',
+                  'Componentes são representativos dos componentes de produção',
+                  'Validação dos objetivos do projeto de custos',
+                  'Definição inicial dos níveis sigma',
+                  'Processo gerais de manufatura estão apropriados e bem conhecidos',
+                  'A maioria dos erros e falhas de software foram removidos',
+                  'Plano de produção está completo',
+                  'A maioria das funcionalidades estão disponíveis para demonstração em um ambiente simulado operacional',
+                  'Teste operacional em um ambiente representativo',
+                  'Prototipação melhora a qualidade da tecnologia em pré-produção',
+                  'A versão "Beta" do software foi lançada',
+                  'Demonstração de um protótipo completamente integrado ao ambiente operacional real ou simulado',
+                  'O protótipo do sistema está testado com sucesso em ambiente de campo',
+                  'Pronto para o ambiente de produção de baixa carga (LRIP - Low Rate Initial Production)',
+                ],
+              },
+              "8": {
+                titulo: 'Sistema totalmente completo, testado, qualificado e demonstrado',
+                desc: 'Prova de que a tecnologia funciona em sua forma final, e sob condições esperadas. Sistema totalmente completo, testado, qualificado e demonstrado. Representa o final da etapa de desenvolvimento da tecnologia.',
+                fases: [
+                  '@:vitrine.maturidade.fase14',
+                  '@:vitrine.maturidade.fase23',
+                ],
+                requisitos: [
+                  'Componentes são compatíveis em forma, conteúdo e funcionalidade com o sistema operacional.',
+                  'Componentes são compatíveis em forma, conteúdo e funcionalidade para a aplicação e plataforma final',
+                  'Componentes são compatíveis em forma, conteúdo e funcionalidade foram demonstrados na plataforma final',
+                  'Demonstração das máquinas e ferramental em ambiente de produção',
+                  'O processo de controle de interface foi concluído',
+                  'A maioria da documentação do software está completa e no sistema de controle de configuração',
+                  'A maioria da documentação de treinamento está completa e no sistema de controle de configuração',
+                  'A maioria da documentação de manutenção está completa e no sistema de controle de configuração',
+                  'Os diagramas finais de arquitetura foram submetidos',
+                  'Processos de manufatura foram demonstrados em projetos pilotos, LRIP (Low Rate Initial Production) ou item similar de produção',
+                  'Processos de manufatura demonstram aceitável produção e níveis de manufatura',
+                  'Todas as funcionalidades do software foram testadas e debuggadas',
+                  'Todas as funcionalidades foram demonstradas em ambiente operacional simulado',
+                  'Os processos de manufatura foram controlados para 4-sigma ou nível de qualidade apropriado',
+                  'Todos os materiais estão em produção e disponíveis',
+                  'Sistema foi qualificado através de testes e avaliações na plataforma atual',
+                  'Manutenibilidade, confiabilidade e suportabilidade da colega de dados foi concluída',
+                  'A fase de validação de VV&A está concluída, software está rodando em ambiente real e em operação',
+                  'A fase de verificação de VV&A está concluída e o sistema atende suas especificações',
+                  'A fase de acreditação de VV&A e o software está autorizado para o uso no ambiente final',
+                  'O sistema está pronto para o ambiente de produção',
+                ],
+              },
+              "9": {
+                titulo: 'O sistema já foi operado em todas as condições, extensão e alcance',
+                desc: 'Tecnologia em formato final, em aplicação/execução de produção, correspondentes a todas as condições operacionais (em extensão/alcance).',
+                fases: [
+                  '@:vitrine.maturidade.fase14',
+                  '@:vitrine.maturidade.fase23',
+                ],
+                requisitos: [
+                  'Conceitos operacionais foram implementados com sucesso',
+                  'Questões de confiabilidade do marco de produção foram endereçadas',
+                  'O projeto está estável, com poucas ou nenhuma mudança de projeto',
+                  'O sistema foi instalado e implantado no ambiente ou plataforma de produção final',
+                  'Efeitos de segurança foram identificados e mitigados',
+                  'Sistema está atualmente demonstrado na sua integralidade',
+                  'Planos de treinamento foram implementados',
+                  'Planos de suportabilidade foram implementados',
+                  'Planos de programa de proteção foram implementados',
+                  'A missão da tecnologia foi atendida através de sucessivas missões e operações',
+                  'Todos os processos de manufatura foram controlados para 6-sigma ou nível de qualidade apropriado',
+                  'Tecnologia estável em ambiente de produção',
+                  'Toda a documentação está completa e concluída',
+                ],
+              },
+            },
+        },
+        parcerias: {
+          titulo: 'Organizações Parceiras',
+          titulo_completo: 'Organizações Parceiras do IFRS',
+          sub_titulo: 'Conheça organizações públicas e privadas parceiras',
+          descricao: 'O IFRS se mantém conectado a diversas organizações públicas e privadas, associações e fóruns interessados no desenvolvimento socioeconômico sustentável das regiões onde atuamos. Muitas organizações se tornam patrocinadoras de projetos focados em inovação e empreendedorismo.',
+          nova_organizacao: 'Nova Organização',
+          nova_parceria: 'Comece sua Parceria',
+          painel: 'Visualizar Painel',
+            menu: {
+                institucional: 'Institucional',
+                organizacoes: 'Organizações',
+                parcerias: 'Parcerias',
+                parceria: 'Parceria',
+                colaborador: 'Colaborador',
+            },
+            chamada: {
+              titulo: 'Quer ser uma organização parceira em projetos de pesquisa, desenvolvimento ou inovação?',
+              desc: 'Você pode submeter sua ideia ou projeto para que possamos avaliar a viabilidade e formas de colaborar com o mesmo. Registre sua demanda junto ao nosso escritório de projetos através do link ao lado, enviando-nos informações a respeito do mesmo.',
+              demanda: 'Seja nosso parceiro',
+            },
+            parceiros: 'Conheça nossas <strong>Parcerias</strong>',
+            organizacoes: {
+              descricao: 'Gerencie as informações de organizações públicas ou privadas, nacionais ou internacionais que o IFRS realiza ou planeja realizar atividades conjuntas de pesquisa científica e/ou tecnológica.',
+            },
+            parcerias: {
+              descricao: 'Gerencie as demandas e as parcerias do IFRS com organizações externas para execução de projetos de pesquisa, desenvolvimento e inovação.',
+            },
+        },
+        servicos: {
+          titulo: 'Prestação de Serviços',
+          competencias: 'Competências',
+          titulo_completo: 'Prestação Institucional de Serviços do IFRS',
+          oportunidades: 'Oportunidades de <strong>Prestação de Serviços</strong>',
+          sub_titulo: 'Conheça laboratórios e serviços disponíveis para sociedade',
+          descricao: '<p>A prestação institucional de serviços representa a oferta de laboratórios do IFRS e de conhecimento, tais como consultorias, capacitações, para a solução de demandas de empresas públicas, privadas e pessoas físicas.</p><p>Se está com dúvidas sobre como executar um projeto de prestação de serviços, consulte os <a href="https://integra.ifrs.edu.br/ep/fluxos/prestacao-de-servicos-com-uso-de-fundacao-de-apoio--ate-r--250-000-00">fluxos e normas</a>.</p>',
+          descricao_interna: '<p>O servidor que se disponibilizar a prestar serviço(s) ou oferecer alguma ação de capacitação em determinada(s) área(s) deverá realizar seu cadastro individual preenchendo este formulário. </p> <p>Entre em contato com a <a href="mailto:proex@ifrs.edu.br" target="_blank">Proex</a> ou  <a href="mailto:escritorio.projetos@ifrs.edu.br" target="_blank">Escritório de Projetos</a> em caso de dúvidas sobre prestação de serviços ou com a <a href="mailto:ddp@ifrs.edu.br" target="_blank">Diretoria de Gestão de Pessoas (DGP)</a> em caso de dúvidas sobre ministrar capacitação de servidores.</p>Caso seja informada como prestação de serviços, a mesma será avaliada pela Proex e, após aprovada, será publicada no Integra.',
+          chamada: {
+            titulo: 'Precisa de uma consultoria ou equipamento especializado?',
+            desc: 'Fale com nosso escritório de projetos para avaliar formas de colaboração.',
+            demanda: 'Entre em contato',
+          },
+          area: 'Descreva aqui suas competências',
+          modalidade: 'Modalidade(s) de oferta do serviço',
+          outraModalidade: 'Outra modalidade de serviço',
+          consultoria: {
+            titulo: 'IFRS Contribui',
+            descricao:  "<p>O Instituto Federal do Rio Grande do Sul (IFRS) convida Micro e Pequenos Empreendedores (MPEs) e Empreendedores Individuais (MEIs) a receberem assessoria gratuita para os seus negócios ou empresas.  <b>A iniciativa visa atender e apoiar empreendedores, em especial os afetados pela pandemia de Covid-19, por meio de projetos de extensão do IFRS.</b> </p>A assessoria fará um processo de diagnóstico e orientação nas principais áreas de gestão, visando a sobrevivência, a manutenção e a ampliação da capacidade de operação das organizações assessoradas.</p><p>Com alegria, compartilhamos que o Projeto IFRS Contribui recebeu o <a href='https://ifrs.edu.br/projeto-do-ifrs-que-auxilia-pequenos-empreendimentos-com-consultorias-recebe-o-premio-sebrae-de-educacao-empreendedora/' target='_blank'>Prêmio Sebrae de Educação Empreendedora, 2ª edição</a>!! Esse prêmio é mérito do empenho e dedicação dos estudantes, servidores, empreendedores e voluntários envolvidos. Obrigado!</p>",
+            chamada: 'É micro ou pequeno empreendedor ou empreendedor individual? Tem interesse em participar?',
+            botao: 'Informe sua demanda',
+            contato_chamada: 'Precisa de uma consultoria para auxiliar seu negócio?',
+            // contato_email: 'rodrigo.noll@ifrs.edu.br',
+            contato_email: 'ifrscontribui@viamao.ifrs.edu.br',
+            subchamada: 'Entre em contato e aguarde, entraremos em contato com você em breve!',
+            fazemos_titulo_1: 'APOIO NO FINANCEIRO',
+            fazemos_subtitulo_1: 'Nosso projeto fornece profissionais extremamente capacitados para avaliarem a questão financeira do seu negócio.',
+            fazemos_titulo_2: 'APOIO EM PLANEJAMENTO ESTRATÉGICO ',
+            fazemos_subtitulo_2: 'Auxiliaremos você na análise micro e macro ambiental, e na definição dos objetivos estratégicos, metas e planos de ação para ampliar suas chances de êxito. ',
+            fazemos_titulo_3: 'APOIO JURÍDICO',
+            fazemos_subtitulo_3: 'Facilitamos a forma de entender e equacionar as questões jurídicas ligadas a contratos, licenças, alvarás, e relações trabalhistas e tributárias.',
+            fazemos_titulo_4: 'APOIO EM MARKETING',
+            fazemos_subtitulo_4: ' Prestamos assessoria para a utilização das melhores ferramentas de marketing, inclusive através de vídeos tutoriais para ferramentas específicas, além de auxiliarmos na elaboração de uma identidade visual para o seu negócio. Lembre-se: aparecer nas redes sociais  durante a pandemia pode ajudar muito sua empresa.',
+            fazemos_titulo_5: 'APOIO EM LOGÍSTICA E OPERAÇÕES',
+            fazemos_subtitulo_5: 'Oferecemos assessoria em logística, logística reversa, gestão de estoques, gestão da qualidade , layout e organização de espaços, otimização de produção, ergonomia e gestão de transportes e frotas.',
+            fazemos_titulo_6: 'APOIO EM GESTÃO DE PESSOAS',
+            fazemos_subtitulo_6: 'Oferecemos suporte não só às questões jurídicas de uma relação trabalhista, mas também auxiliando a criar canais de comunicação, desenvolvendo competências para exercer a liderança, além de assessorar no recrutamento e seleção, e no treinamento e desenvolvimento',
+          }
+        }
+
+    }
+}
